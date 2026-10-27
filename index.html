@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page de estudo sobre a trilogia O Senhor dos Anéis.">
+    <title>O Senhor dos Anéis | Uma jornada pela Terra-média</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23d9a728' stroke-width='12'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho__conteudo">
+            <a href="#inicio" class="logo">Terra-média</a>
+            <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+            <nav class="menu" id="menu">
+                <a href="#sobre">A saga</a>
+                <a href="#povos">Povos</a>
+                <a href="#jornadas">Jornadas</a>
+                <a href="#motivos">Motivos</a>
+                <a href="#faq">Perguntas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <img class="hero__anel" src="./images/anel.svg" alt="">
+            <div class="container hero__conteudo">
+                <p class="hero__sobretitulo">Uma jornada pela Terra-média</p>
+                <h1>O Senhor dos Anéis</h1>
+                <p class="hero__texto">Três filmes, uma Sociedade e um anel que precisa ser destruído. Prepare a sua jornada.</p>
+                <div class="hero__botoes">
+                    <a href="#jornadas" class="botao botao--primario">Escolher minha jornada</a>
+                    <a href="#sobre" class="botao botao--contorno">Conhecer a saga</a>
+                </div>
+            </div>
+            <img class="hero__montanhas" src="./images/montanhas.svg" alt="">
+        </section>
+
+        <section class="secao" id="sobre">
+            <div class="container conteudo-imagem">
+                <img src="./images/anel.svg" alt="Ilustração de um anel dourado brilhando" class="conteudo-imagem__img">
+                <div class="conteudo-imagem__texto">
+                    <h2 class="titulo">A saga</h2>
+                    <p>A trilogia cinematográfica dirigida por Peter Jackson adapta a obra de J. R. R. Tolkien e foi lançada entre 2001 e 2003.</p>
+                    <p>Acompanhamos o hobbit Frodo e seus companheiros em uma missão perigosa: levar o Um Anel até a Montanha da Perdição, enquanto a Terra-média inteira se prepara para a guerra.</p>
+                    <ul class="filmes">
+                        <li><strong>2001</strong> A Sociedade do Anel</li>
+                        <li><strong>2002</strong> As Duas Torres</li>
+                        <li><strong>2003</strong> O Retorno do Rei</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao--escura" id="povos">
+            <div class="container">
+                <h2 class="titulo titulo--centro">Povos da Terra-média</h2>
+                <div class="abas" role="tablist">
+                    <button class="aba ativa" data-aba="hobbits" role="tab">Hobbits</button>
+                    <button class="aba" data-aba="elfos" role="tab">Elfos</button>
+                    <button class="aba" data-aba="anoes" role="tab">Anões</button>
+                    <button class="aba" data-aba="homens" role="tab">Homens</button>
+                </div>
+
+                <div class="painel ativo" id="hobbits">
+                    <h3>Hobbits</h3>
+                    <p>Povo pequeno e pacato do Condado, apaixonado por boa comida, jardins e histórias tranquilas. Apesar do tamanho, mostram uma coragem inesperada quando o mundo mais precisa.</p>
+                </div>
+                <div class="painel" id="elfos">
+                    <h3>Elfos</h3>
+                    <p>Seres antigos e graciosos, ligados à natureza, à música e ao conhecimento. Vivem por séculos e guardam a memória das eras passadas da Terra-média.</p>
+                </div>
+                <div class="painel" id="anoes">
+                    <h3>Anões</h3>
+                    <p>Mestres da pedra e do metal, constroem grandes salões nas montanhas. São teimosos, leais e famosos pela habilidade com machados e forjas.</p>
+                </div>
+                <div class="painel" id="homens">
+                    <h3>Homens</h3>
+                    <p>O povo mais numeroso, com reinos como Rohan e Gondor. São mortais e frágeis, mas carregam uma capacidade enorme de esperança e de liderança.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="jornadas">
+            <div class="container">
+                <h2 class="titulo titulo--centro">Escolha sua jornada</h2>
+                <p class="subtitulo">Planeje a sua maratona. As durações são aproximadas.</p>
+                <div class="planos">
+                    <article class="plano">
+                        <h3>Uma noite</h3>
+                        <p class="plano__tempo">cerca de 3 horas</p>
+                        <ul>
+                            <li>Um filme da trilogia</li>
+                            <li>Ideal para começar</li>
+                            <li>Sem compromisso</li>
+                        </ul>
+                        <a href="#faq" class="botao botao--contorno">Quero essa</a>
+                    </article>
+                    <article class="plano plano--destaque">
+                        <span class="plano__selo">Mais escolhida</span>
+                        <h3>A trilogia</h3>
+                        <p class="plano__tempo">cerca de 9 horas</p>
+                        <ul>
+                            <li>Os três filmes em sequência</li>
+                            <li>Versão de cinema</li>
+                            <li>Fim de semana perfeito</li>
+                        </ul>
+                        <a href="#faq" class="botao botao--primario">Quero essa</a>
+                    </article>
+                    <article class="plano">
+                        <h3>Edição estendida</h3>
+                        <p class="plano__tempo">cerca de 12 horas</p>
+                        <ul>
+                            <li>Cenas extras dos três filmes</li>
+                            <li>Para os fãs de verdade</li>
+                            <li>Leve lanches</li>
+                        </ul>
+                        <a href="#faq" class="botao botao--contorno">Quero essa</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao--escura" id="motivos">
+            <div class="container conteudo-imagem conteudo-imagem--inverso">
+                <img src="./images/montanhas.svg" alt="Montanhas ao entardecer" class="conteudo-imagem__img conteudo-imagem__img--paisagem">
+                <div class="conteudo-imagem__texto">
+                    <h2 class="titulo">Por que assistir</h2>
+                    <ul class="motivos">
+                        <li>Paisagens épicas filmadas na Nova Zelândia</li>
+                        <li>Uma história sobre amizade e coragem</li>
+                        <li>Trilha sonora marcante de Howard Shore</li>
+                        <li>Personagens inesquecíveis</li>
+                        <li>Vencedora de vários Oscars</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="faq">
+            <div class="container container--estreito">
+                <h2 class="titulo titulo--centro">Perguntas frequentes</h2>
+                <div class="faq">
+                    <div class="faq__item">
+                        <button class="faq__pergunta">Preciso ler os livros antes?<span class="faq__icone">+</span></button>
+                        <div class="faq__resposta"><p>Não. Os filmes funcionam sozinhos. Os livros só aprofundam o que você já viu.</p></div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__pergunta">Qual a ordem para assistir?<span class="faq__icone">+</span></button>
+                        <div class="faq__resposta"><p>A Sociedade do Anel, depois As Duas Torres e por fim O Retorno do Rei.</p></div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__pergunta">Qual versão é melhor: cinema ou estendida?<span class="faq__icone">+</span></button>
+                        <div class="faq__resposta"><p>A de cinema é mais ágil. A estendida tem cenas extras e agrada quem já conhece a história.</p></div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__pergunta">E O Hobbit, vem antes?<span class="faq__icone">+</span></button>
+                        <div class="faq__resposta"><p>Na história, sim, mas não é necessário. Muita gente prefere começar pela trilogia.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape__conteudo">
+            <div>
+                <h3 class="rodape__titulo">Terra-média</h3>
+                <p>Projeto de estudo feito com HTML, CSS e JavaScript.</p>
+            </div>
+            <div>
+                <h3 class="rodape__titulo">Navegação</h3>
+                <a href="#sobre">A saga</a>
+                <a href="#povos">Povos</a>
+                <a href="#jornadas">Jornadas</a>
+                <a href="#faq">Perguntas</a>
+            </div>
+            <div>
+                <h3 class="rodape__titulo">Aviso</h3>
+                <p>Página feita por fã, sem fins comerciais. O Senhor dos Anéis pertence aos seus respectivos detentores de direitos.</p>
+            </div>
+        </div>
+        <p class="rodape__copy">&copy; <span id="ano"></span> Breno. Feito para fins de estudo.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
